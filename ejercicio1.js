@@ -24,6 +24,9 @@ const replaceNumbers = number => {
                 break;
         }
     });
+    if (meaning === '') {
+        meaning = number;
+    }
     return meaning;
 }
 
