@@ -11,7 +11,7 @@ const replaceNumbers = number => {
     }
     let numberMeaning = number.split('');
 
-    numberMeaning.forEach = elements => {
+    numberMeaning.forEach(elements => {
         switch (elements) {
             case '3':
                 meaning += 'Foo';
@@ -23,11 +23,11 @@ const replaceNumbers = number => {
                 meaning += 'Quix';
                 break;
         }
-    }
+    });
     if (meaning === '') {
         meaning = number;
     }
     return meaning;
 }
 
-console.log(replaceNumbers('10'))
+console.log(replaceNumbers('35'))
