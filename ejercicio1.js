@@ -29,5 +29,6 @@ const replaceNumbers = number => {
     }
     return meaning;
 }
-
-console.log(replaceNumbers('35'))
+for (let i = 1; i < 100; i++){ //Change '100' for any quantity to make shorter or longer the result
+    console.log(replaceNumbers('' + i))
+}
