@@ -1,4 +1,4 @@
-let changeArabToRoman = digit => {
+const changeArabToRoman = digit => {
     let romanDictionary = [
         [1000, 'M'],
         [900, 'CM'],
@@ -15,16 +15,16 @@ let changeArabToRoman = digit => {
         [1, 'I']
     ];
     if (digit < 1) {
-        return 'Not a valid number';
+        return '';
     } else if (digit > 3999) {
-        return 'Not a valid number'
+        return ''
     }
     else {
         for (let i = 0; i < romanDictionary.length; i++) {
             if (digit >= romanDictionary[i][0]) {
                 return romanDictionary[i][1] + changeArabToRoman(digit - romanDictionary[i][0]);
-            }
+            }  
         }
     }
 }
-console.log(changeArabToRoman(1199))
+console.log(changeArabToRoman('1199'))

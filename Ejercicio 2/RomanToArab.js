@@ -1,4 +1,4 @@
-let romanToArab = romanNumber => {
+const changeRomanToArab = romanNumber => {
     let romanDictionary = {
         I: 1,
         V: 5,
@@ -17,4 +17,4 @@ let romanToArab = romanNumber => {
     }
     return result;
 }
-console.log(romanToArab('mcmxcix'))
+console.log(changeRomanToArab('mcmxcix'))
